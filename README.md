@@ -1,6 +1,7 @@
 # HomeTask1: MVVM-C
 
 Architectures
+
 Make a MVVM-C app:
 - hardcoded login with creds user/123qwe checked by viewmodel
 - navigates to list of stings fetched from
