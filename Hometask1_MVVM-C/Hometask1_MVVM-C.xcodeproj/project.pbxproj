@@ -17,7 +17,13 @@
 		5F153BC5256AB81800346021 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F153BC4256AB81800346021 /* AppCoordinator.swift */; };
 		5F153BD3256AC1AB00346021 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F153BD2256AC1AB00346021 /* LoginViewController.xib */; };
 		5F153BD8256AC23600346021 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F153BD7256AC23600346021 /* LoginViewController.swift */; };
-		5F153BE0256AC5A100346021 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F153BDF256AC5A100346021 /* LoginCoordinator.swift */; };
+		5F153BE0256AC5A100346021 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F153BDF256AC5A100346021 /* FlowCoordinator.swift */; };
+		5F153BFC256AEEC800346021 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F153BFB256AEEC800346021 /* LoginViewModel.swift */; };
+		5F153C02256AF75B00346021 /* ListOfStringsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F153C01256AF75B00346021 /* ListOfStringsViewController.xib */; };
+		5F153C07256AF77100346021 /* ListOfStringsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F153C06256AF77100346021 /* ListOfStringsViewController.swift */; };
+		5F61308E256AFABB00643BFE /* ListOfStringsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F61308D256AFABB00643BFE /* ListOfStringsViewModel.swift */; };
+		5F613094256AFD5800643BFE /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F613093256AFD5800643BFE /* Defaults.swift */; };
+		5F613099256B017C00643BFE /* NewtworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F613098256B017C00643BFE /* NewtworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +60,13 @@
 		5F153BC4256AB81800346021 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		5F153BD2256AC1AB00346021 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		5F153BD7256AC23600346021 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		5F153BDF256AC5A100346021 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		5F153BDF256AC5A100346021 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		5F153BFB256AEEC800346021 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		5F153C01256AF75B00346021 /* ListOfStringsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListOfStringsViewController.xib; sourceTree = "<group>"; };
+		5F153C06256AF77100346021 /* ListOfStringsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfStringsViewController.swift; sourceTree = "<group>"; };
+		5F61308D256AFABB00643BFE /* ListOfStringsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfStringsViewModel.swift; sourceTree = "<group>"; };
+		5F613093256AFD5800643BFE /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		5F613098256B017C00643BFE /* NewtworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewtworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,7 @@
 		5F153B872567173200346021 /* HomeTask1_MVVM-C */ = {
 			isa = PBXGroup;
 			children = (
+				5F613092256AFD4400643BFE /* Services */,
 				5F153BD0256ABEFC00346021 /* Common Files */,
 				5F153BCC256ABD9F00346021 /* Views */,
 				5F153BCB256ABD9500346021 /* ViewModels */,
@@ -139,7 +152,7 @@
 			children = (
 				5F153BBF256AB72000346021 /* CoordinatorProtocol.swift */,
 				5F153BC4256AB81800346021 /* AppCoordinator.swift */,
-				5F153BDF256AC5A100346021 /* LoginCoordinator.swift */,
+				5F153BDF256AC5A100346021 /* FlowCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -154,6 +167,8 @@
 		5F153BCB256ABD9500346021 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				5F153BFB256AEEC800346021 /* LoginViewModel.swift */,
+				5F61308D256AFABB00643BFE /* ListOfStringsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -161,6 +176,7 @@
 		5F153BCC256ABD9F00346021 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5F153C00256AF73300346021 /* ListOfStringsView */,
 				5F153BD1256AC18000346021 /* LoginView */,
 			);
 			path = Views;
@@ -183,6 +199,24 @@
 				5F153BD7256AC23600346021 /* LoginViewController.swift */,
 			);
 			path = LoginView;
+			sourceTree = "<group>";
+		};
+		5F153C00256AF73300346021 /* ListOfStringsView */ = {
+			isa = PBXGroup;
+			children = (
+				5F153C01256AF75B00346021 /* ListOfStringsViewController.xib */,
+				5F153C06256AF77100346021 /* ListOfStringsViewController.swift */,
+			);
+			path = ListOfStringsView;
+			sourceTree = "<group>";
+		};
+		5F613092256AFD4400643BFE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5F613093256AFD5800643BFE /* Defaults.swift */,
+				5F613098256B017C00643BFE /* NewtworkService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +324,7 @@
 			files = (
 				5F153BD3256AC1AB00346021 /* LoginViewController.xib in Resources */,
 				5F153B952567173500346021 /* LaunchScreen.storyboard in Resources */,
+				5F153C02256AF75B00346021 /* ListOfStringsViewController.xib in Resources */,
 				5F153B922567173500346021 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,12 +350,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F153BE0256AC5A100346021 /* LoginCoordinator.swift in Sources */,
+				5F153BE0256AC5A100346021 /* FlowCoordinator.swift in Sources */,
 				5F153BD8256AC23600346021 /* LoginViewController.swift in Sources */,
+				5F153C07256AF77100346021 /* ListOfStringsViewController.swift in Sources */,
 				5F153B892567173200346021 /* AppDelegate.swift in Sources */,
+				5F61308E256AFABB00643BFE /* ListOfStringsViewModel.swift in Sources */,
 				5F153BC5256AB81800346021 /* AppCoordinator.swift in Sources */,
 				5F153BC0256AB72100346021 /* CoordinatorProtocol.swift in Sources */,
+				5F613094256AFD5800643BFE /* Defaults.swift in Sources */,
+				5F613099256B017C00643BFE /* NewtworkService.swift in Sources */,
 				5F153B8B2567173200346021 /* SceneDelegate.swift in Sources */,
+				5F153BFC256AEEC800346021 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

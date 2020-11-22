@@ -9,18 +9,18 @@ import UIKit
 
 class AppCoordinator: Coordinator {
     let window: UIWindow
-    let rootViewController: UINavigationController
-    let loginCoordinator: LoginCoordinator
+    let navigationController: UINavigationController
+    let flowCoordinator: FlowCoordinator
     
     init(window: UIWindow) {
         self.window = window
-        rootViewController = UINavigationController()
-        loginCoordinator = LoginCoordinator(presenter: rootViewController)
+        navigationController = UINavigationController()
+        flowCoordinator = FlowCoordinator(presenter: navigationController)
     }
     
     func start() {
-        window.rootViewController = rootViewController
-        loginCoordinator.start()
+        window.rootViewController = navigationController
+        flowCoordinator.start()
         window.makeKeyAndVisible()
     }
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginCoordinator: Coordinator {
+class FlowCoordinator: Coordinator {
     private let presenter: UINavigationController
     
     init(presenter: UINavigationController) {
@@ -15,8 +15,18 @@ class LoginCoordinator: Coordinator {
     }
     
     func start() {
-        let loginViewController = LoginViewController(nibName: nil, bundle: nil)
-        loginViewController.title = "Login"
-        presenter.pushViewController(loginViewController, animated: true)
+        if Defaults.isLoggedIn {
+            let listOfStringsViewController = ListOfStringsViewController(nibName: nil, bundle: nil)
+            listOfStringsViewController.title = "List of strings"
+            let model = ListOfStringsViewModel(view: listOfStringsViewController)
+            listOfStringsViewController.model = model
+            presenter.pushViewController(listOfStringsViewController, animated: true)
+        } else {
+            let loginViewController = LoginViewController(nibName: nil, bundle: nil)
+            loginViewController.title = "Login"
+            let model = LoginViewModel(view: loginViewController)
+            loginViewController.model = model
+            presenter.pushViewController(loginViewController, animated: true)
+        }
     }
 }
