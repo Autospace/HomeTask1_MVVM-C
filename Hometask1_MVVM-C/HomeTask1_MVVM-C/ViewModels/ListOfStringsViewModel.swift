@@ -24,9 +24,20 @@ class ListOfStringsViewModel {
 
 extension ListOfStringsViewModel: ListOfStringsViewModelDelegate {
     func loadData() {
-        // TODO: implement network request
-        let strings = "stub\nlist\nof strings"
-        view?.showListOfStrings(strings: strings)
+        let networkService = NetworkService()
+        networkService.fetchStrings {[weak self] (result) in
+            guard let self = self else { return }
+            switch result {
+            case .failure(let error):
+                DispatchQueue.main.async {
+                    self.view?.showError(with: error.localizedDescription)
+                }
+            case .success(let stringData):
+                DispatchQueue.main.async {
+                    self.view?.showListOfStrings(strings: stringData)
+                }
+            }
+        }
     }
     
     func logout() {

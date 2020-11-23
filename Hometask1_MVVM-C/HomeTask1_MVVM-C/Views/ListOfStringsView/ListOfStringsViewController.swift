@@ -9,6 +9,7 @@ import UIKit
 
 protocol ListOfStringsViewInterface: class {
     func showListOfStrings(strings: String)
+    func showError(with message: String)
 }
 
 class ListOfStringsViewController: UIViewController {
@@ -29,5 +30,11 @@ class ListOfStringsViewController: UIViewController {
 extension ListOfStringsViewController: ListOfStringsViewInterface {
     func showListOfStrings(strings: String) {
         listOfStringsLabel.text = strings
+    }
+
+    func showError(with message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
 }

@@ -297,7 +297,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5F153B802567173200346021 /* Build configuration list for PBXProject "HomeTask1_MVVM-C" */;
+			buildConfigurationList = 5F153B802567173200346021 /* Build configuration list for PBXProject "Hometask1_MVVM-C" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -531,6 +531,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WNRC3AC2CZ;
 				INFOPLIST_FILE = "HomeTask1_MVVM-C/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -550,6 +551,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WNRC3AC2CZ;
 				INFOPLIST_FILE = "HomeTask1_MVVM-C/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -648,7 +650,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5F153B802567173200346021 /* Build configuration list for PBXProject "HomeTask1_MVVM-C" */ = {
+		5F153B802567173200346021 /* Build configuration list for PBXProject "Hometask1_MVVM-C" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F153BAD2567173500346021 /* Debug */,
