@@ -14,22 +14,37 @@ protocol ListOfStringsViewInterface: class {
 
 class ListOfStringsViewController: UIViewController {
     @IBOutlet private var listOfStringsLabel: UILabel!
+    @IBOutlet private var scrollView: UIScrollView!
+
     var model: ListOfStringsViewModel?
+    lazy var refreshControl: UIRefreshControl = {
+        return UIRefreshControl()
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupRefreshControl()
         model?.loadData()
     }
     
-    @IBAction func tapOnLogoutButton() {
+    @IBAction private func tapOnLogoutButton() {
         model?.logout()
     }
-    
+
+    private func setupRefreshControl() {
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        scrollView.refreshControl = refreshControl
+    }
+
+    @objc private func refresh(_ refreshControl: UIRefreshControl) {
+        model?.loadData()
+    }
 }
 
 extension ListOfStringsViewController: ListOfStringsViewInterface {
     func showListOfStrings(strings: String) {
         listOfStringsLabel.text = strings
+        refreshControl.endRefreshing()
     }
 
     func showError(with message: String) {
