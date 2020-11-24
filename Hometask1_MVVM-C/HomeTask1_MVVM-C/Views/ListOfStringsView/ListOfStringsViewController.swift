@@ -20,7 +20,7 @@ class ListOfStringsViewController: UIViewController {
     lazy var refreshControl: UIRefreshControl = {
         return UIRefreshControl()
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupRefreshControl()
@@ -49,7 +49,9 @@ extension ListOfStringsViewController: ListOfStringsViewInterface {
 
     func showError(with message: String) {
         let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+            self.refreshControl.endRefreshing()
+        }))
         present(alert, animated: true, completion: nil)
     }
 }
