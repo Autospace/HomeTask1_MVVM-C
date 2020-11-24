@@ -24,6 +24,8 @@
 		5F61308E256AFABB00643BFE /* ListOfStringsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F61308D256AFABB00643BFE /* ListOfStringsViewModel.swift */; };
 		5F613094256AFD5800643BFE /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F613093256AFD5800643BFE /* Defaults.swift */; };
 		5F613099256B017C00643BFE /* NewtworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F613098256B017C00643BFE /* NewtworkService.swift */; };
+		5FF4218C256DA1A8005E0CE3 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF4218B256DA1A8005E0CE3 /* MockURLProtocol.swift */; };
+		5FF42191256DA54B005E0CE3 /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF42190256DA54B005E0CE3 /* NetworkTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		5F61308D256AFABB00643BFE /* ListOfStringsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfStringsViewModel.swift; sourceTree = "<group>"; };
 		5F613093256AFD5800643BFE /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		5F613098256B017C00643BFE /* NewtworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewtworkService.swift; sourceTree = "<group>"; };
+		5FF4218B256DA1A8005E0CE3 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		5FF42190256DA54B005E0CE3 /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,8 @@
 			children = (
 				5F153B9F2567173500346021 /* HomeTask1_MVVM_CTests.swift */,
 				5F153BA12567173500346021 /* Info.plist */,
+				5FF4218B256DA1A8005E0CE3 /* MockURLProtocol.swift */,
+				5FF42190256DA54B005E0CE3 /* NetworkTests.swift */,
 			);
 			path = "HomeTask1_MVVM-CTests";
 			sourceTree = "<group>";
@@ -297,7 +303,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5F153B802567173200346021 /* Build configuration list for PBXProject "Hometask1_MVVM-C" */;
+			buildConfigurationList = 5F153B802567173200346021 /* Build configuration list for PBXProject "HomeTask1_MVVM-C" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -368,6 +374,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FF4218C256DA1A8005E0CE3 /* MockURLProtocol.swift in Sources */,
+				5FF42191256DA54B005E0CE3 /* NetworkTests.swift in Sources */,
 				5F153BA02567173500346021 /* HomeTask1_MVVM_CTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -650,7 +658,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5F153B802567173200346021 /* Build configuration list for PBXProject "Hometask1_MVVM-C" */ = {
+		5F153B802567173200346021 /* Build configuration list for PBXProject "HomeTask1_MVVM-C" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F153BAD2567173500346021 /* Debug */,
