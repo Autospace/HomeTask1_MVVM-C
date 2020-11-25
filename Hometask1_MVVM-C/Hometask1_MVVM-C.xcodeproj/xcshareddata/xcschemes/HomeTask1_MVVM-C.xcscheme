@@ -17,7 +17,7 @@
                BlueprintIdentifier = "5F153B842567173200346021"
                BuildableName = "HomeTask1_MVVM-C.app"
                BlueprintName = "HomeTask1_MVVM-C"
-               ReferencedContainer = "container:HomeTask1_MVVM-C.xcodeproj">
+               ReferencedContainer = "container:Hometask1_MVVM-C.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,7 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -35,7 +36,7 @@
                BlueprintIdentifier = "5F153B9A2567173500346021"
                BuildableName = "HomeTask1_MVVM-CTests.xctest"
                BlueprintName = "HomeTask1_MVVM-CTests"
-               ReferencedContainer = "container:HomeTask1_MVVM-C.xcodeproj">
+               ReferencedContainer = "container:Hometask1_MVVM-C.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,7 +46,7 @@
                BlueprintIdentifier = "5F153BA52567173500346021"
                BuildableName = "HomeTask1_MVVM-CUITests.xctest"
                BlueprintName = "HomeTask1_MVVM-CUITests"
-               ReferencedContainer = "container:HomeTask1_MVVM-C.xcodeproj">
+               ReferencedContainer = "container:Hometask1_MVVM-C.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -67,7 +68,7 @@
             BlueprintIdentifier = "5F153B842567173200346021"
             BuildableName = "HomeTask1_MVVM-C.app"
             BlueprintName = "HomeTask1_MVVM-C"
-            ReferencedContainer = "container:HomeTask1_MVVM-C.xcodeproj">
+            ReferencedContainer = "container:Hometask1_MVVM-C.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -84,7 +85,7 @@
             BlueprintIdentifier = "5F153B842567173200346021"
             BuildableName = "HomeTask1_MVVM-C.app"
             BlueprintName = "HomeTask1_MVVM-C"
-            ReferencedContainer = "container:HomeTask1_MVVM-C.xcodeproj">
+            ReferencedContainer = "container:Hometask1_MVVM-C.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

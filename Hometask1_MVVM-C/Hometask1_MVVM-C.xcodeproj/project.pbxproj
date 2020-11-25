@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10113956256ECEE1001AB0C1 /* VewModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10113955256ECEE1001AB0C1 /* VewModelsTests.swift */; };
 		5F153B892567173200346021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F153B882567173200346021 /* AppDelegate.swift */; };
 		5F153B8B2567173200346021 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F153B8A2567173200346021 /* SceneDelegate.swift */; };
 		5F153B922567173500346021 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F153B912567173500346021 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10113955256ECEE1001AB0C1 /* VewModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VewModelsTests.swift; sourceTree = "<group>"; };
 		5F153B852567173200346021 /* HomeTask1_MVVM-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HomeTask1_MVVM-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F153B882567173200346021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F153B8A2567173200346021 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,7 +128,6 @@
 				5F153BCC256ABD9F00346021 /* Views */,
 				5F153BCB256ABD9500346021 /* ViewModels */,
 				5F153BBE256AB70200346021 /* Coordinators */,
-				5F153BCA256ABD7E00346021 /* Models */,
 				5F153B882567173200346021 /* AppDelegate.swift */,
 				5F153B962567173500346021 /* Info.plist */,
 			);
@@ -140,6 +141,7 @@
 				5F153BA12567173500346021 /* Info.plist */,
 				5FF4218B256DA1A8005E0CE3 /* MockURLProtocol.swift */,
 				5FF42190256DA54B005E0CE3 /* NetworkTests.swift */,
+				10113955256ECEE1001AB0C1 /* VewModelsTests.swift */,
 			);
 			path = "HomeTask1_MVVM-CTests";
 			sourceTree = "<group>";
@@ -161,13 +163,6 @@
 				5F153BDF256AC5A100346021 /* FlowCoordinator.swift */,
 			);
 			path = Coordinators;
-			sourceTree = "<group>";
-		};
-		5F153BCA256ABD7E00346021 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		5F153BCB256ABD9500346021 /* ViewModels */ = {
@@ -303,7 +298,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5F153B802567173200346021 /* Build configuration list for PBXProject "HomeTask1_MVVM-C" */;
+			buildConfigurationList = 5F153B802567173200346021 /* Build configuration list for PBXProject "Hometask1_MVVM-C" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -374,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10113956256ECEE1001AB0C1 /* VewModelsTests.swift in Sources */,
 				5FF4218C256DA1A8005E0CE3 /* MockURLProtocol.swift in Sources */,
 				5FF42191256DA54B005E0CE3 /* NetworkTests.swift in Sources */,
 				5F153BA02567173500346021 /* HomeTask1_MVVM_CTests.swift in Sources */,
@@ -658,7 +654,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5F153B802567173200346021 /* Build configuration list for PBXProject "HomeTask1_MVVM-C" */ = {
+		5F153B802567173200346021 /* Build configuration list for PBXProject "Hometask1_MVVM-C" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F153BAD2567173500346021 /* Debug */,
