@@ -13,18 +13,19 @@ protocol ListOfStringsViewModelDelegate: class {
 }
 
 class ListOfStringsViewModel {
+    let networkService: NetworkService
     weak var view: ListOfStringsViewInterface?
     weak var flowCoordinator: FlowCoordinatorDelegate?
     
-    init(view: ListOfStringsViewInterface, flowCoordinatorDelegate: FlowCoordinatorDelegate) {
+    init(view: ListOfStringsViewInterface, flowCoordinatorDelegate: FlowCoordinatorDelegate, networkService: NetworkService = NetworkService()) {
         self.view = view
         self.flowCoordinator = flowCoordinatorDelegate
+        self.networkService = networkService
     }
 }
 
 extension ListOfStringsViewModel: ListOfStringsViewModelDelegate {
     func loadData() {
-        let networkService = NetworkService()
         networkService.fetchStrings {[weak self] (result) in
             guard let self = self else { return }
             switch result {

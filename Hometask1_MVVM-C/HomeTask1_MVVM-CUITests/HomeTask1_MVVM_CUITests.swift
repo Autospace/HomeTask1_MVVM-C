@@ -8,26 +8,30 @@
 import XCTest
 
 class HomeTask1_MVVM_CUITests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    var app: XCUIApplication!
+    
+    override func setUp() {
+        app = XCUIApplication()
+        app.launch()
     }
 
     func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
+        app.buttons["Login"].firstMatch.tap()
+        app.alerts["Error"].scrollViews.otherElements.buttons["OK"].tap()
 
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let passwordTextField = app.secureTextFields["Password"].firstMatch
+        passwordTextField.tap()
+        sleep(1)
+        passwordTextField.typeText("123qwe")
+        sleep(1)
+        app.buttons.firstMatch.tap()
+        
+        let usernameTextField = app.textFields["Username"].firstMatch
+        usernameTextField.tap()
+        sleep(1)
+        usernameTextField.typeText("user")
+        app.buttons["Login"].firstMatch.tap()
+        sleep(2)
+        app.buttons["Logout"].firstMatch.tap()
     }
 }
